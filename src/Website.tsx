@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import myImage from "./assets/myImage.webp";
 import Project from "./Project";
 import orgo from "./assets/orgo.jpg";
