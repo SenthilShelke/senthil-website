@@ -22,11 +22,6 @@ function Website() {
 
   return (
     <div className={`container ${fade ? "fade-in" : "fade-out"}`}>
-      <div className="particle-container">
-      {[...Array(20)].map((_, i) => (
-        <div key={i} className="particle"></div>
-      ))}
-    </div>
       {currentPage === "main" ? (
         <div className="main-page-container">
           <div className="text-container">
