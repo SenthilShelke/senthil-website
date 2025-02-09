@@ -67,7 +67,7 @@ body {
 }
 
 .text-container {
-  max-width: 800px;
+  max-width: 1000px;
   padding: 60px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
@@ -92,7 +92,7 @@ body {
 }
 
 .my-image {
-  height: 450px;
+  height: 550px;
   border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
