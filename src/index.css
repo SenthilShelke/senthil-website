@@ -45,8 +45,15 @@ body {
 }
 
 .main-page-container {
-  position: relative;
-  height: 100%; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .projects-container {
@@ -58,43 +65,37 @@ body {
 }
 
 .text-container {
-  max-width: 800px;
-  border: 2px solid white;
-  padding: 20px 200px 20px 0px; 
-  background: rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
-  margin-top: 60px;
-  margin-left: 40px;
-  border-color: rgba(110, 50, 157, 0.8);
+  border: 2px solid rgba(110, 50, 157, 0.8);
 }
 
 .name {
-  font-size: 1.5rem;
-  font-weight: normal;
+  font-size: 2.5rem;
+  font-weight: bold;
   font-family: monospace;
   color: antiquewhite;
-  margin-left: 175px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .paragraph {
   color: antiquewhite;
-  margin-left: 50px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-family: monospace;
-  line-height: 2;
+  line-height: 1.8;
   text-align: center;
 }
 
 .my-image {
-  position: absolute;
-  top: 0px;
-  right: 20px;
-  height: 291px;
-  border-radius: 50px;
+  height: 350px;
+  border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-top: 60px;
+  margin-left: 20px;
 }
 
 .my-image:hover {
