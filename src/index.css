@@ -172,7 +172,7 @@ button:active {
 }
 
 .project-image {
-  max-width: 600px;
+  max-width: 575px;
   height: auto;
   border-radius: 10px;
   border: 3px solid rgba(110, 50, 157, 0.8);
