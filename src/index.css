@@ -209,7 +209,7 @@ button:active {
   color: antiquewhite;
   margin: 0;
   text-align: right;
-  margin-right: 10px;
+  margin-right: 20px;
   font-size: x-large;
   transition: color 0.5s ease, text-decoration 0.5s ease;
 }
