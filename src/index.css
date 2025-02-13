@@ -112,9 +112,42 @@ body {
   0% {
     stroke-dasharray: 5000;
     stroke-dashoffset: 5000;
+    stroke: #ff00ff;
+    stroke-width: 2px;
+    filter: drop-shadow(0 0 4px #ff00ff);
+  }
+  25% {
+    stroke-dashoffset: 3750;
+    stroke: #00ffff;
+    stroke-width: 4px;
+    filter: drop-shadow(0 0 6px #00ffff);
+  }
+  50% {
+    stroke-dashoffset: 2500;
+    stroke: #15ff00;
+    stroke-width: 6px;
+    filter: drop-shadow(0 0 8px #15ff00);
+  }
+  75% {
+    stroke-dashoffset: 1250;
+    stroke: #ffeb3b;
+    stroke-width: 8px;
+    filter: drop-shadow(0 0 10px #ffeb3b);
   }
   100% {
     stroke-dashoffset: 0;
+    stroke: #ff5733;
+    stroke-width: 10px;
+    filter: drop-shadow(0 0 15px #ff5733);
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -239,10 +272,10 @@ svg {
 }
 
 path {
-  stroke: #8e15ca;  
+  stroke: #8e15ca;
   stroke-width: 10px;
   fill: none;
-  /* stroke-dasharray: 5000; 
-  stroke-dashoffset: 5000; */
-  animation: draw 4s linear forwards, fadein 4s 6s forwards;
+  animation: draw 8s ease-in-out forwards, fadein 4s 4s forwards;
+  filter: drop-shadow(0 0 8px #8e15ca);
+  transition: stroke 0.5s ease, stroke-width 0.5s ease;
 }
