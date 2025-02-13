@@ -256,9 +256,9 @@ svg {
 
 path {
   stroke: #8e15ca;  
-  stroke-width: 6px;
+  stroke-width: 10px;
   fill: none;
-  stroke-dasharray: 5000; 
-  stroke-dashoffset: 5000;
+  /* stroke-dasharray: 5000; 
+  stroke-dashoffset: 5000; */
   animation: draw 4s linear forwards, fadein 2s 3s forwards;
 }

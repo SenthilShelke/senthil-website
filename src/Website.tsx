@@ -37,19 +37,16 @@ function Website() {
             </div>
           </div>
           <div className="my-image">
-  <svg
-    version="1.0"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 300.000000 400.000000"
-    preserveAspectRatio="xMidYMid meet"
-  >
-    <g
-      transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
-      fill="none"
-      stroke="#ffffff"
-      strokeWidth="2"
-    >
-      <path d="M23 3535 c0 -33 2 -45 4 -27 2 18 2 45 0 60 -2 15 -4 0 -4 -33z"/>
+
+<svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+ width="300.000000pt" height="400.000000pt" viewBox="0 0 300.000000 400.000000"
+ preserveAspectRatio="xMidYMid meet">
+<metadata>
+Created by potrace 1.10, written by Peter Selinger 2001-2011
+</metadata>
+<g transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+fill="#000000" stroke="none">
+<path d="M23 3535 c0 -33 2 -45 4 -27 2 18 2 45 0 60 -2 15 -4 0 -4 -33z"/>
 <path d="M1320 3261 c-36 -15 -101 -33 -145 -40 -44 -7 -86 -18 -93 -23 -7 -6
 -27 -19 -45 -28 -17 -10 -31 -23 -29 -30 1 -6 -2 -9 -7 -6 -5 4 -17 -4 -25
 -16 -18 -25 -21 -53 -6 -43 6 3 10 1 10 -5 0 -6 -11 -8 -26 -6 -19 4 -27 0
@@ -345,8 +342,9 @@ l26 30 -7 -35 c-4 -19 -9 -45 -12 -57 -3 -13 -1 -23 5 -23 5 0 12 19 15 43 3
 <path d="M130 141 c-7 -18 -10 -34 -6 -38 3 -3 6 -1 6 6 0 7 4 10 9 7 13 -8
 23 23 13 41 -7 12 -12 8 -22 -16z"/>
 <path d="M1605 74 l-50 -13 60 6 c33 3 64 9 69 14 12 11 -17 8 -79 -7z"/>
-    </g>
-  </svg>
+</g>
+</svg>
+
 </div>
         </div>
       ) : currentPage === "projects" ? (
