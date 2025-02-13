@@ -136,9 +136,9 @@ body {
   }
   100% {
     stroke-dashoffset: 0;
-    stroke: #ff5733;
+    stroke: #9b10ce;
     stroke-width: 10px;
-    filter: drop-shadow(0 0 15px #ff5733);
+    filter: drop-shadow(0 0 15px #d320ee);
   }
 }
 
