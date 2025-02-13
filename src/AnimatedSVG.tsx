@@ -12,7 +12,7 @@ const AnimatedSVG: React.FC = () => {
       const length = path.getTotalLength();
       path.style.strokeDasharray = `${length}`;
       path.style.strokeDashoffset = `${length}`;
-      path.style.animation = "draw 2s linear forwards";
+      path.style.animation = "draw 8s linear forwards";
     });
   }, []);
 
