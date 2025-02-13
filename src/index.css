@@ -106,11 +106,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-.my-image svg {
-  height: 100%;
-  width: 100%;
-  animation: draw 5s linear forwards; 
-}
+
 
 @keyframes draw {
   0% {
@@ -260,5 +256,5 @@ path {
   fill: none;
   /* stroke-dasharray: 5000; 
   stroke-dashoffset: 5000; */
-  animation: draw 4s linear forwards, fadein 2s 3s forwards;
+  animation: draw 4s linear forwards, fadein 4s 6s forwards;
 }
