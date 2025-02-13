@@ -106,6 +106,7 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
+
 .buttons {
   margin-left: 220px;
   margin-top: 50px;
@@ -223,4 +224,13 @@ button:active {
 svg {
   width: 300px;
   height: 400px;
+}
+
+path {
+  stroke: #8e15ca;  
+  stroke-width: 10px;
+  fill: none;
+  /* stroke-dasharray: 5000; 
+  stroke-dashoffset: 5000; */
+  animation: draw 4s linear forwards, fadein 4s 6s forwards;
 }
