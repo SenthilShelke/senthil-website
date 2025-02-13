@@ -95,14 +95,15 @@ body {
 
 .my-image {
   height: 545px;
-  /* width: auto; */
+  width: 700px;
   border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Ensures the SVG stays within the border */
+  overflow: hidden; 
+  background: rgba(0, 0, 0, 0.6);
 }
 
 .my-image svg {
@@ -254,8 +255,8 @@ svg {
 }
 
 path {
-  stroke: #ff5733;  
-  stroke-width: 2px;
+  stroke: #8e15ca;  
+  stroke-width: 6px;
   fill: none;
   stroke-dasharray: 5000; 
   stroke-dashoffset: 5000;
