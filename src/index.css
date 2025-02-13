@@ -95,6 +95,33 @@ body {
 
 .my-image {
   height: 545px;
+  /* width: auto; */
+  border-radius: 20px;
+  border: 3px solid rgba(110, 50, 157, 0.8);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Ensures the SVG stays within the border */
+}
+
+.my-image svg {
+  height: 100%;
+  width: 100%;
+  animation: draw 5s linear forwards; 
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 5000;
+    stroke-dashoffset: 5000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+/* .my-image {
+  height: 545px;
   border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -105,7 +132,7 @@ body {
 .my-image:hover {
   transform: scale(1.05);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-}
+} */
 
 .buttons {
   margin-left: 220px;
@@ -221,3 +248,16 @@ button:active {
   text-decoration: underline;
 }
 
+svg {
+  width: 300px;
+  height: 400px;
+}
+
+path {
+  stroke: #ff5733;  
+  stroke-width: 2px;
+  fill: none;
+  stroke-dasharray: 5000; 
+  stroke-dashoffset: 5000;
+  animation: draw 4s linear forwards, fadein 2s 3s forwards;
+}
