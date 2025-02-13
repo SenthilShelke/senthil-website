@@ -112,7 +112,7 @@ body {
   0% {
     stroke-dasharray: 5000;
     stroke-dashoffset: 5000;
-    stroke: #ff00ff;
+    stroke: #eb5421;
     stroke-width: 2px;
     filter: drop-shadow(0 0 4px #ff00ff);
   }
