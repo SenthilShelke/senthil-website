@@ -106,31 +106,6 @@ body {
   background: rgba(0, 0, 0, 0.6);
 }
 
-
-
-@keyframes draw {
-  0% {
-    stroke-dasharray: 5000;
-    stroke-dashoffset: 5000;
-  }
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-/* .my-image {
-  height: 545px;
-  border-radius: 20px;
-  border: 3px solid rgba(110, 50, 157, 0.8);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin-left: 20px;
-}
-
-.my-image:hover {
-  transform: scale(1.05);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
-} */
-
 .buttons {
   margin-left: 220px;
   margin-top: 50px;
@@ -248,13 +223,4 @@ button:active {
 svg {
   width: 300px;
   height: 400px;
-}
-
-path {
-  stroke: #8e15ca;  
-  stroke-width: 10px;
-  fill: none;
-  /* stroke-dasharray: 5000; 
-  stroke-dashoffset: 5000; */
-  animation: draw 4s linear forwards, fadein 4s 6s forwards;
 }
