@@ -297,8 +297,8 @@ path {
 
 .social-icons a {
   color: antiquewhite;
-  width: 20px;  /* Explicit width */
-  height: 20px; /* Explicit height */
+  width: 60px; 
+  height: 60px; 
   display: flex;
   justify-content: center;
   align-items: center;
@@ -306,8 +306,8 @@ path {
 }
 
 .social-icons a svg {
-  width: 100%;   /* SVG takes up full width */
-  height: 100%;  /* SVG takes up full height */
+  width: 100%;   
+  height: 100%; 
 }
 
 .social-icons a:hover {
