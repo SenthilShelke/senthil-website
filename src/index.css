@@ -77,20 +77,21 @@ body {
 }
 
 .name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: monospace;
   color: antiquewhite;
   text-align: center;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
 }
 
 .paragraph {
   color: antiquewhite;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-family: monospace;
   line-height: 1.8;
   text-align: center;
+  margin-bottom: 30px; /* Add spacing below the paragraph */
 }
 
 .my-image {
@@ -187,7 +188,7 @@ button:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px; /* Adjust this as needed */
+  margin-top: 30px; /* Adjust this as needed */
 }
 
 .project-container {
@@ -291,8 +292,8 @@ path {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 15px;
+  gap: 15px;
+  margin-top: 20px;
 }
 
 .social-icons a {
