@@ -291,17 +291,19 @@ path {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 5px; 
-  margin-top: 20px;
-  font-size: 1.5rem; 
+  gap: 5px;
+  margin-top: 15px;
 }
 
 .social-icons a {
   color: antiquewhite;
+  font-size: 1rem; /* Tiny icon size */
+  width: 20px;
+  height: 20px;
   transition: transform 0.2s ease, color 0.2s ease;
 }
 
 .social-icons a:hover {
   color: rgb(81, 28, 110);
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
