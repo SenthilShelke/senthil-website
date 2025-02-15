@@ -184,17 +184,10 @@ button:active {
 }
 
 .projects-button {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: monospace;
-  background: linear-gradient(to bottom right, blueviolet, purple);
-  color: antiquewhite;
-  border: none;
-  border-radius: 8px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.25s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: 20px; /* Adjust this as needed */
 }
 
 .project-container {
