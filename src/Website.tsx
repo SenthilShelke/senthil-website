@@ -1,5 +1,4 @@
 import { useState } from "react";
-// import myImage from "./assets/myImage.webp";
 import Project from "./Project";
 import orgo from "./assets/orgo.jpg";
 import bits from "./assets/bits.jpeg";
@@ -29,7 +28,7 @@ function Website() {
               Hello, my name is Senthil and I am a first-year computer
               engineering student at the University Of Waterloo
             </p>
-            <div className="buttons">
+            <div className="projects-button">
               <button onClick={() => handlePageChange("projects")}>
                 Projects
               </button>
