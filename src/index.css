@@ -291,16 +291,23 @@ path {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   margin-top: 15px;
 }
 
 .social-icons a {
   color: antiquewhite;
-  font-size: 1rem; /* Tiny icon size */
-  width: 20px;
-  height: 20px;
+  width: 20px;  /* Explicit width */
+  height: 20px; /* Explicit height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons a svg {
+  width: 100%;   /* SVG takes up full width */
+  height: 100%;  /* SVG takes up full height */
 }
 
 .social-icons a:hover {
