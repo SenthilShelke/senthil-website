@@ -82,7 +82,8 @@ body {
   font-family: monospace;
   color: antiquewhite;
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: 0; /* Remove unnecessary space above */
+  margin-bottom: 20px;
 }
 
 .paragraph {
