@@ -5,6 +5,7 @@ import bits from "./assets/bits.jpeg";
 import plant from "./assets/plant.jpeg";
 import mandelbrot from "./assets/mandelbrot1.png";
 import AnimatedSVG from "./AnimatedSVG";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
 function Website() {
   const [currentPage, setCurrentPage] = useState<"main" | "projects">("main");
@@ -32,6 +33,20 @@ function Website() {
               <button onClick={() => handlePageChange("projects")}>
                 Projects
               </button>
+            </div>
+            <div className="social-icons">
+              <a href="https://github.com/SenthilShelke" target="_blank" rel="noopener noreferrer">
+                <FaGithub />
+              </a>
+              <a href="https://www.linkedin.com/in/senthil-shelke-3446722a1/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
+              </a>
+              <a href="https://www.instagram.com/senthil.shelke/" target="_blank" rel="noopener noreferrer">
+                <FaInstagram />
+              </a>
+              <a href="mailto:senthil.shelke@gmail.com">
+                <FaEnvelope />
+              </a>
             </div>
           </div>
           <div className="my-image">
