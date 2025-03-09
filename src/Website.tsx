@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Project from "./Project";
-import orgo from "./assets/orgo.jpg";
+import OrgoImg2 from "./assets/OrgoImg2.jpg";
 import bits from "./assets/bits.jpeg";
 import plant from "./assets/plant.jpeg";
 import mandelbrot from "./assets/mandelbrot1.png";
@@ -62,7 +62,7 @@ function Website() {
             language="Processing"
             reverse={false}
             description="This project allows the user to display simple organic chemical reactions through line structures. It uses the G4P GUI builder to allow the user to pick a type of reaction to display from a list. The program reads data from files to choose which specific compounds will be displayed in which reaction. Default files with data are provided but the user is given the liberty of inputting their own files as well."
-            image={orgo}
+            image={OrgoImg2}
           ></Project>
           <Project
             title="Smart Water"
