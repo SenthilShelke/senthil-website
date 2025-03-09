@@ -4,7 +4,7 @@ import OrgoImg2 from "./assets/OrgoImg2.jpg";
 import Sort from "./assets/Sort.png";
 import plant from "./assets/plant.jpeg";
 import FractalImg from "./assets/FractalImg.jpg";
-import Capsule from "./assets/Capsule.png";
+import Capsule from "./assets/Capsule.jpg";
 import AnimatedSVG from "./AnimatedSVG";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
