@@ -3,7 +3,7 @@ import Project from "./Project";
 import OrgoImg2 from "./assets/OrgoImg2.jpg";
 import bits from "./assets/bits.jpeg";
 import plant from "./assets/plant.jpeg";
-import mandelbrot from "./assets/mandelbrot1.png";
+import FractalImg from "./assets/FractalImg.jpg";
 import AnimatedSVG from "./AnimatedSVG";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
@@ -86,7 +86,7 @@ function Website() {
             language="TypeScript"
             reverse={true}
             description="This project uses React Native to be able to visualize the Mandelbrot Set on your phone or a mobile simulator. It leverages the Skia library for its 2D graphics and the React Native Reanimated library to allow for smooth zooming in and out of the screen."
-            image={mandelbrot}
+            image={FractalImg}
           ></Project>
         </div>
       ) : null}
