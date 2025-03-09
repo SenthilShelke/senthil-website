@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Project from "./Project";
 import OrgoImg2 from "./assets/OrgoImg2.jpg";
-import bits from "./assets/bits.jpeg";
+import Sort from "./assets/Sort.png";
 import plant from "./assets/plant.jpeg";
 import FractalImg from "./assets/FractalImg.jpg";
 import AnimatedSVG from "./AnimatedSVG";
@@ -78,7 +78,7 @@ function Website() {
             language="C++"
             reverse={false}
             description="This is a sorting algorithm I developed  that is similar to Quick Sort but uses bitwise operators as it's way of sorting. It parritions the array into two based its most significant bit, then repeats the process with each partitioned array but this time looking at the next bit."
-            image={bits}
+            image={Sort}
           ></Project>
           <Project
             title="Mandelbrot Visualization"
