@@ -2,7 +2,7 @@ import { useState } from "react";
 import Project from "./Project";
 import OrgoImg2 from "./assets/OrgoImg2.jpg";
 import Sort from "./assets/Sort.png";
-import plant from "./assets/plant.jpeg";
+import SmartWater from "./assets/SmartWater.jpg";
 import FractalImg from "./assets/FractalImg.jpg";
 import Capsule from "./assets/Capsule.jpg";
 import AnimatedSVG from "./AnimatedSVG";
@@ -87,7 +87,7 @@ function Website() {
             language="C"
             reverse={true}
             description="This project is an automated plant watering system based off of two STM32 microcontrollers. Attatched to the microcontrollers are various pieces of equipment, such as moisture and ultrasonic sensors which send data to the microcontroller to be used in calculations. An LCD display is also incorporated to display important measurments such as the current temperature of the room and the depth of the water in the tank that is used to water the plant."
-            image={plant}
+            image={SmartWater}
           ></Project>
           <Project
             title="Organic Chemistry Reaction Simulator"
