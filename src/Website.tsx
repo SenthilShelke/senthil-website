@@ -4,7 +4,7 @@ import OrgoImg2 from "./assets/OrgoImg2.jpg";
 import Sort from "./assets/Sort.png";
 import SmartWater from "./assets/SmartWater.jpg";
 import FractalImg from "./assets/FractalImg.jpg";
-import Capsule from "./assets/Capsule.jpg";
+import CapsuleImg from "./assets/CapsuleImage.jpg";
 import AnimatedSVG from "./AnimatedSVG";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 
@@ -61,7 +61,7 @@ function Website() {
             language="TypeScript"
             reverse={false}
             description="This project is a React Native app that allows the user to track events in the form of a horizontal timeline with events laid on top of it. The events are customizable, allowing the user to add a title, description, and date. The app also allows the user to add images to their events and view them in a gallery. I have been actively developing this app and it is something that I am very passionate about."
-            image={Capsule}
+            image={CapsuleImg}
           ></Project>
           <Project
             title="Mandelbrot Visualization App"
