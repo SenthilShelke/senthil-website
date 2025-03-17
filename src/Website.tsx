@@ -27,7 +27,7 @@ function Website() {
           <div className="text-container">
             <p className="paragraph">
               Hello, my name is Senthil Shelke and I am a first-year computer
-              engineering student at the University Of Waterloo
+              engineering student at the University Of Waterloo. I am a passionate software developer with a strong interest in React & React Native. In my spare time I enjoy working on personal projects, watching TV and spending time with friends. I am always looking for new opportunities to learn and grow as a developer and an entrepreneur. Feel free to check out some of my projects below or reach out to me through my socials!
             </p>
             <div className="projects-button">
               <button onClick={() => handlePageChange("projects")}>
