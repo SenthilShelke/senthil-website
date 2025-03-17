@@ -25,9 +25,8 @@ function Website() {
       {currentPage === "main" ? (
         <div className="main-page-container">
           <div className="text-container">
-            <h2 className="name">Senthil Shelke</h2>
             <p className="paragraph">
-              Hello, my name is Senthil and I am a first-year computer
+              Hello, my name is Senthil Shelke and I am a first-year computer
               engineering student at the University Of Waterloo
             </p>
             <div className="projects-button">

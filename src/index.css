@@ -76,16 +76,6 @@ body {
   box-sizing: border-box;
 }
 
-.name {
-  font-size: 2.75rem;
-  font-weight: bold;
-  font-family: monospace;
-  color: antiquewhite;
-  text-align: center;
-  margin-top: 0; 
-  margin-bottom: 20px;
-}
-
 .paragraph {
   color: antiquewhite;
   font-size: 1.5rem;
