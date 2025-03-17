@@ -26,7 +26,7 @@ function Website() {
         <div className="main-page-container">
           <div className="text-container">
             <p className="paragraph">
-            “Hi, I’m Senthil Shelke, a first-year Computer Engineering student at the University of Waterloo. I’m passionate about software development, especially React & React Native. In my spare time, I enjoy building projects, watching TV, and spending time with friends. I’m always eager to learn, grow, and explore entrepreneurial opportunities. Check out my projects below or connect with me through my socials!”
+            Hello! My name is Senthil Shelke, and I am a first-year Computer Engineering student at the University of Waterloo. I’m passionate about software development, especially React & React Native. In my spare time, I enjoy building projects, watching TV, and spending time with friends. I’m always eager to learn, grow, and explore entrepreneurial opportunities. Check out my projects below or connect with me through my socials!
             </p>
             <div className="projects-button">
               <button onClick={() => handlePageChange("projects")}>
