@@ -80,7 +80,7 @@ function Website() {
             image={Sort}
           ></Project>
           <Project
-            title="Smart Water - Automated Plant Waterng System"
+            title="Smart Water - Automated Plant Watering System"
             link="https://github.com/SenthilShelke/ECE198-Project"
             language="C"
             reverse={true}
