@@ -49,7 +49,7 @@ function Website() {
               <a href="https://www.linkedin.com/in/senthil-shelke-3446722a1/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
-              <a href="https://www.instagram.com/senthil.shelke/" target="_blank" rel="noopener noreferrer">
+              <a href="https://www.instagram.com/senthilshelke/" target="_blank" rel="noopener noreferrer">
                 <FaInstagram />
               </a>
               <a href="mailto:senthil.shelke@gmail.com">
