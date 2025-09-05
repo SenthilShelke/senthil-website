@@ -178,13 +178,12 @@ button:active {
 }
 
 .projects-button {
+  width: auto;       /* let the button size itself */
+  height: auto;      /* no fixed height */
+  margin: 0;         /* remove auto margins that pushed them apart */
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 30px; 
-  width: 200px;
-  height: 50px;
-  margin: 0 auto;
 }
 
 .project-container {
@@ -312,22 +311,21 @@ path {
   transform: scale(1.2);
 }
 
-/* Buttons row on main page */
 .buttons-row {
   display: flex;
-  gap: 16px;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+  justify-content: center;   /* center the whole row */
+  align-items: center;       /* vertical alignment */
+  gap: 20px;                 /* space between buttons */
+  margin-top: 30px;          /* spacing from text above */
 }
 
 .experience-button {
+  width: auto;       /* let the button size itself */
+  height: auto;      /* no fixed height */
+  margin: 0;         /* remove auto margins that pushed them apart */
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 50px;
-  margin: 0 auto;
 }
 
 /* Experience card styles */
