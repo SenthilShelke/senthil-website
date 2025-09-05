@@ -33,12 +33,13 @@ function Website() {
 
             {/* Buttons row */}
             <div className="buttons-row">
-              <div className="projects-button">
-                <button onClick={() => handlePageChange("projects")}>Projects</button>
-              </div>
               <div className="experience-button">
                 <button onClick={() => handlePageChange("experience")}>Experience</button>
               </div>
+              <div className="projects-button">
+                <button onClick={() => handlePageChange("projects")}>Projects</button>
+              </div>
+
             </div>
 
             <div className="social-icons">
@@ -70,7 +71,7 @@ function Website() {
             link="https://github.com/SenthilShelke/Capsule"
             language="TypeScript"
             reverse={false}
-            description="This project is a React Native app that allows the user to track events in the form of a horizontal timeline with events laid on top of it. The events are customizable, allowing the user to add a title, description, and date. The app also allows the user to add images to their events and view them in a gallery. I have been actively developing this app and it is something that I am very passionate about."
+            description="This React Native app lets you create your own timelines by adding events with titles, dates, descriptions, and photos. Timelines can be saved, edited later, and viewed in a slideshow mode with a rotating image carousel — and everything you create is stored so it’s always there when you come back."
             image={CapsuleImg}
           />
           <Project
