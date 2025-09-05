@@ -337,7 +337,14 @@ path {
   border-radius: 10px;
   padding: 28px 32px;
   margin: 15px;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.experience-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(110, 50, 157, 0.35);
 }
 
 .experience-header {
@@ -346,10 +353,11 @@ path {
   gap: 4px;
 }
 
+
 .experience-title {
   font-family: monospace;
   color: antiquewhite;
-  font-size: x-large;
+  font-size: 1.6rem;
   margin: 0;
 }
 
@@ -361,29 +369,44 @@ path {
 
 .experience-company {
   font-weight: 700;
+  color: rgb(168, 122, 223); /* subtle purple accent */
 }
 
 .experience-location {
-  opacity: 0.9;
+  opacity: 0.8;
+  font-style: italic;
 }
 
 .experience-dates {
   font-family: monospace;
-  color: antiquewhite;
-  font-size: medium;
-  opacity: 0.85;
+  color: #9b59b6; /* brighter purple highlight for dates */
+  font-size: 0.95rem;
+  font-weight: bold;
+  margin-top: 2px;
 }
 
 .experience-bullets {
-  margin: 8px 0 0 18px;
-  padding: 0;
-  color: antiquewhite;
-  font-family: monospace;
-  font-size: large;
-  line-height: 1.4;
+  margin: 10px 0 0 0;
+  padding-left: 20px;
+  list-style: none; /* remove default dots */
 }
 
 .experience-bullets li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
+  color: antiquewhite;
+  font-family: monospace;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 22px;
+}
+
+/* Custom bullet style */
+.experience-bullets li::before {
+  content: "▹"; /* small triangle bullet */
+  position: absolute;
+  left: 0;
+  color: #a259ff; /* purple accent for bullets */
+  font-weight: bold;
 }
 
