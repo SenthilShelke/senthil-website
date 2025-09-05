@@ -28,7 +28,7 @@ function Website() {
         <div className="main-page-container">
           <div className="text-container">
             <p className="paragraph">
-              Hi! I’m Senthil Shelke, a second-year Computer Engineering student at the University of Waterloo. I’ve completed one internship and am currently on my second, where I’ve been building skills in software development, testing, and modern frameworks. I enjoy working with technologies like React, React Native, and SQL, and I’ve built projects ranging from mobile apps to data-driven dashboards. I’m always eager to learn, take on new challenges, and grow as an engineer. Feel free to check out my projects below or connect with me!
+              Hi! I’m Senthil Shelke, a second-year Computer Engineering student at the University of Waterloo. I’ve had the chance to explore both software testing and data engineering through internships, and I enjoy turning what I learn into projects of my own. Recently, I’ve been building mobile apps with React Native and creating interactive dashboards powered by data. I’m always curious, eager to take on new challenges, and excited to keep growing as a developer. Feel free to explore my projects below or connect with me!
             </p>
 
             {/* Buttons row */}
