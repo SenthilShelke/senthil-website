@@ -118,8 +118,9 @@ function Website() {
             location="Waterloo, ON"
             dates="Sep 2025 — Dec 2025"
             bullets={[
-              "Designed and implemented complex SQL queries on a large relational database with 50+ tables to retrieve and transform data, powering interactive dashboards used by clients to track revenue and monitor deal performance.",
-              "Developed interactive dashboards in Evidence Studio, mapping user-selected filters to dynamic query parameters and implementing visualizations to generate financial reports that reduced manual reporting time by 30%."
+              "Wrote SQL queries across a large database to pull together data for financial dashboards.",
+              "Built dashboards in Evidence Studio where users could filter and explore their data through charts and tables.",
+              "Helped make reporting easier by reducing the need for manual data work."
             ]}
           />
 
@@ -130,10 +131,10 @@ function Website() {
             location="Waterloo, ON"
             dates="May 2025 — Aug 2025"
             bullets={[
-              "Developed 130+ modular end-to-end tests in JavaScript with Playwright, leveraging page objects and fixtures to improve code reusability, prevent critical bugs across core features, and increase release confidence.",
-              "Designed reusable test flows for complex UIs, including virtualized tables and recursive tree structures, to validate nested data integrity and ensure stable locators for dynamic elements, reducing the need for manual QA by 70%.",
-              "Enhanced CI/CD pipelines by refining GitHub Actions YAML configurations to streamline automated testing, resulting in a 60% reduction in execution time and increasing the frequency of release cycles by 30%.",
-              "Created and reviewed 40+ unit tests in Jest using the Gemini CLI to accelerate test generation, then refined cases manually to improve accuracy, expand coverage of core features, and catch edge-case defects."
+              "Developed 130+ automated Playwright tests using page objects and fixtures to catch bugs early and keep tests maintainable.",
+              "Designed test flows for tricky UI features like virtualized tables and tree structures.",
+              "Improved CI/CD pipelines by cleaning up GitHub Actions configs, making test runs faster and smoother.",
+              "Wrote 40+ unit tests in Jest using the Gemini CLI to expand coverage and catch edge cases."
             ]}
           />
         </div>

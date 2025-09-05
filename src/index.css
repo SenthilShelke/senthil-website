@@ -234,7 +234,7 @@ button:active {
 .project-image:hover {
   transform: scale(1.02);
   box-shadow: 0 12px 24px rgba(73, 6, 188, 0.3);
-}}
+}
 
 .project-extra {
   display: flex;
