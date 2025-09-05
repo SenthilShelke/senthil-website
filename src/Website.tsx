@@ -71,7 +71,7 @@ function Website() {
             link="https://github.com/SenthilShelke/Capsule"
             language="TypeScript"
             reverse={false}
-            description="This React Native app lets you create your own timelines by adding events with titles, dates, descriptions, and photos. Timelines can be saved, edited later, and viewed in a slideshow mode with a rotating image carousel — and everything you create is stored so it’s always there when you come back."
+            description="This app lets you create your own timelines by adding events with titles, dates, descriptions, and photos. You can sign up for an account so your timelines are saved just for you, edit them anytime or view them in a slideshow with a rotating image carousel, and everything will still be there when you come back."
             image={CapsuleImg}
           />
           <Project
