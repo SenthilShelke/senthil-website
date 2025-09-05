@@ -69,11 +69,18 @@ body {
 .text-container {
   max-width: 1000px;
   padding: 101px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.55);    
   border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
   height: 545px;
   box-sizing: border-box;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.text-container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(110, 50, 157, 0.35);
 }
 
 .paragraph {
@@ -96,6 +103,12 @@ body {
   align-items: center;
   overflow: hidden; 
   background: rgba(0, 0, 0, 0.6);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.my-image:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(110, 50, 157, 0.35);
 }
 
 
@@ -178,9 +191,9 @@ button:active {
 }
 
 .projects-button {
-  width: auto;       /* let the button size itself */
-  height: auto;      /* no fixed height */
-  margin: 0;         /* remove auto margins that pushed them apart */
+  width: auto;
+  height: auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -309,16 +322,16 @@ path {
 
 .buttons-row {
   display: flex;
-  justify-content: center;   /* center the whole row */
-  align-items: center;       /* vertical alignment */
-  gap: 20px;                 /* space between buttons */
-  margin-top: 30px;          /* spacing from text above */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
 }
 
 .experience-button {
-  width: auto;       /* let the button size itself */
-  height: auto;      /* no fixed height */
-  margin: 0;         /* remove auto margins that pushed them apart */
+  width: auto;
+  height: auto;
+  margin: 0;
   display: flex;
   justify-content: center;
   align-items: center;
