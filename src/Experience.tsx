@@ -1,6 +1,4 @@
 // Experience.tsx
-import { FaMapMarkerAlt, FaBuilding, FaCheckCircle, FaCalendarAlt } from "react-icons/fa";
-
 interface ExperienceProps {
   title: string;
   company: string;
@@ -13,39 +11,19 @@ function Experience(props: ExperienceProps) {
   const { title, company, location, dates, bullets } = props;
 
   return (
-    <div className="experience-card">
-      {/* timeline accent */}
-      <div className="experience-accent" aria-hidden />
-
-      {/* header */}
-      <div className="experience-top">
-        <div className="experience-titleblock">
-          <h2 className="experience-title">{title}</h2>
-          <div className="experience-tags">
-            <span className="xp-tag">
-              <FaBuilding className="xp-icon" /> {company}
-            </span>
-            <span className="xp-tag">
-              <FaMapMarkerAlt className="xp-icon" /> {location}
-            </span>
-          </div>
+    <div className="experience-container">
+      <div className="experience-header">
+        <h1 className="experience-title">{title}</h1>
+        <div className="experience-meta">
+          <span className="experience-company">{company}</span>
+          <span className="experience-location"> — {location}</span>
         </div>
-
-        <div className="xp-dates">
-          <FaCalendarAlt className="xp-icon" /> {dates}
-        </div>
+        <div className="experience-dates">{dates}</div>
       </div>
 
-      {/* divider */}
-      <div className="xp-divider" />
-
-      {/* bullets */}
-      <ul className="experience-list">
+      <ul className="experience-bullets">
         {bullets.map((b, i) => (
-          <li key={i} className="xp-item">
-            <FaCheckCircle className="xp-bullet" />
-            <span>{b}</span>
-          </li>
+          <li key={i}>{b}</li>
         ))}
       </ul>
     </div>
