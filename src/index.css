@@ -311,3 +311,80 @@ path {
   color: rgb(81, 28, 110);
   transform: scale(1.2);
 }
+
+/* Buttons row on main page */
+.buttons-row {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.experience-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* Experience card styles */
+.experience-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  border: 2px solid rgb(110, 50, 157);
+  border-radius: 10px;
+  padding: 28px 32px;
+  margin: 15px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.experience-header {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.experience-title {
+  font-family: monospace;
+  color: antiquewhite;
+  font-size: x-large;
+  margin: 0;
+}
+
+.experience-meta {
+  font-family: monospace;
+  color: antiquewhite;
+  font-size: large;
+}
+
+.experience-company {
+  font-weight: 700;
+}
+
+.experience-location {
+  opacity: 0.9;
+}
+
+.experience-dates {
+  font-family: monospace;
+  color: antiquewhite;
+  font-size: medium;
+  opacity: 0.85;
+}
+
+.experience-bullets {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  color: antiquewhite;
+  font-family: monospace;
+  font-size: large;
+  line-height: 1.4;
+}
+
+.experience-bullets li {
+  margin-bottom: 8px;
+}
