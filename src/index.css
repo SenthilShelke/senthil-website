@@ -68,21 +68,21 @@ body {
 
 .text-container {
   max-width: 1000px;
-  padding: 40px; 
+  padding: 101px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 20px;
   border: 3px solid rgba(110, 50, 157, 0.8);
+  height: 545px;
   box-sizing: border-box;
-  margin: 0 auto;
 }
 
 .paragraph {
   color: antiquewhite;
-  font-size: 1rem;
+  font-size: 1.0rem;
   font-family: monospace;
   line-height: 1.8;
-  text-align: left;  
-  margin: 0;         
+  text-align: center;
+  margin-bottom: 30px; 
 }
 
 .my-image {
