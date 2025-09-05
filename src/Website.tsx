@@ -63,10 +63,7 @@ function Website() {
         </div>
       ) : currentPage === "projects" ? (
         <div className="projects-container">
-          <div className="page-header">
             <button onClick={() => handlePageChange("main")}>Back</button>
-            <button onClick={() => handlePageChange("experience")}>Experience</button>
-          </div>
 
           <Project
             title="Capsule - Event Tracker App"
@@ -111,10 +108,7 @@ function Website() {
         </div>
       ) : currentPage === "experience" ? (
         <div className="projects-container">
-          <div className="page-header">
             <button onClick={() => handlePageChange("main")}>Back</button>
-            <button onClick={() => handlePageChange("projects")}>Projects</button>
-          </div>
 
           {/* Data Engineering Intern */}
           <Experience

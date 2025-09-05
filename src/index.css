@@ -387,20 +387,3 @@ path {
   margin-bottom: 8px;
 }
 
-.page-header {
-  position: sticky;    /* stays at top while scrolling */
-  top: 0;
-  display: flex;
-  justify-content: space-between; /* Back left, cross-link right */
-  align-items: center;
-  padding: 8px 0 16px 0;
-  z-index: 2;
-  /* Optional subtle backdrop so buttons remain readable if content scrolls under */
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.6) 0%,
-    rgba(0, 0, 0, 0.35) 60%,
-    transparent 100%
-  );
-}
-
