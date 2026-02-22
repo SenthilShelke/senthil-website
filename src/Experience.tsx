@@ -13,7 +13,9 @@ function Experience(props: ExperienceProps) {
       <div className="experience-header">
         <div className="experience-main-info">
           <h1 className="experience-title">{title}</h1>
-          <span className="experience-company">| {company}</span>
+          <span className="experience-company">
+            <span className="company-separator">| </span>{company}
+          </span>
         </div>
         <div className="experience-dates">{dates}</div>
       </div>

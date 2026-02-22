@@ -220,16 +220,44 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 10px;
+}
+
+@media (max-width: 1024px) {
+  .experience-header {
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .experience-main-info {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .experience-company {
+    border-left: none;
+    padding-left: 0;
+  }
+}
+
+.company-separator {
+  display: inline;
+}
+
+@media (max-width: 1024px) {
+  .company-separator {
+    display: none;
+  }
 }
 
 .experience-main-info {
   display: flex;
   flex-direction: row;
-  align-items: baseline;
+  align-items: flex-start;
   gap: 8px;
+  flex-wrap: wrap;
 }
 
 .experience-title {
