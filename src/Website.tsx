@@ -240,7 +240,7 @@ function Website() {
               company="PandoPartner"
               dates="Sep 2025 — Present"
               bullets={[
-                "Built and optimized a company-wide financial dashboard platform, making reports load in seconds instead of minutes."
+                "Built and optimized a company-wide financial dashboard platform with SQL materialized views, making reports load in seconds instead of minutes."
               ]}
             />
 
