@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import Project from "./Project";
 import Experience from "./Experience";
 import OrgoImg2 from "./assets/OrgoImg2.jpg";
@@ -37,6 +38,130 @@ const skillsList = [
 ];
 
 function Website() {
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const isDragging = useRef(false);
+  const isHovered = useRef(false);
+  const startX = useRef(0);
+  const scrollLeft = useRef(0);
+  const direction = useRef(1);
+  const dragMoved = useRef(false);
+
+  useEffect(() => {
+    let animationId: number;
+
+    const scroll = () => {
+      if (!isDragging.current && !isHovered.current && carouselRef.current) {
+        carouselRef.current.scrollLeft += direction.current;
+        
+        const halfWidth = carouselRef.current.scrollWidth / 2;
+        
+        if (direction.current === 1 && carouselRef.current.scrollLeft >= halfWidth) {
+          carouselRef.current.scrollLeft = 0;
+        } else if (direction.current === -1 && carouselRef.current.scrollLeft <= 0) {
+          carouselRef.current.scrollLeft = halfWidth;
+        }
+      }
+      animationId = requestAnimationFrame(scroll);
+    };
+
+    animationId = requestAnimationFrame(scroll);
+    return () => cancelAnimationFrame(animationId);
+  }, []);
+
+  const handleMouseDown = (e: React.MouseEvent) => {
+    isDragging.current = true;
+    dragMoved.current = false;
+    if (carouselRef.current) {
+      startX.current = e.pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = carouselRef.current.scrollLeft;
+    }
+  };
+
+  const handleMouseLeave = () => {
+    isHovered.current = false;
+    isDragging.current = false;
+  };
+
+  const handleMouseEnter = () => {
+    isHovered.current = true;
+  };
+
+  const handleMouseUp = () => {
+    isDragging.current = false;
+    if (!dragMoved.current) {
+      direction.current *= -1;
+    }
+  };
+
+  const handleMouseMove = (e: React.MouseEvent) => {
+    if (!isDragging.current || !carouselRef.current) return;
+    e.preventDefault();
+    
+    const x = e.pageX - carouselRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+    
+    if (Math.abs(walk) > 5) {
+      dragMoved.current = true;
+    }
+
+    let newScroll = scrollLeft.current - walk;
+    const halfWidth = carouselRef.current.scrollWidth / 2;
+    
+    if (newScroll <= 0) {
+      newScroll += halfWidth;
+      startX.current = e.pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = newScroll + walk;
+    } else if (newScroll >= halfWidth) {
+      newScroll -= halfWidth;
+      startX.current = e.pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = newScroll + walk;
+    }
+    
+    carouselRef.current.scrollLeft = newScroll;
+  };
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    isDragging.current = true;
+    dragMoved.current = false;
+    if (carouselRef.current) {
+      startX.current = e.touches[0].pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = carouselRef.current.scrollLeft;
+    }
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    if (!isDragging.current || !carouselRef.current) return;
+    
+    const x = e.touches[0].pageX - carouselRef.current.offsetLeft;
+    const walk = (x - startX.current) * 1.5;
+
+    if (Math.abs(walk) > 5) {
+      dragMoved.current = true;
+    }
+
+    let newScroll = scrollLeft.current - walk;
+    const halfWidth = carouselRef.current.scrollWidth / 2;
+    
+    if (newScroll <= 0) {
+      newScroll += halfWidth;
+      startX.current = e.touches[0].pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = newScroll + walk;
+    } else if (newScroll >= halfWidth) {
+      newScroll -= halfWidth;
+      startX.current = e.touches[0].pageX - carouselRef.current.offsetLeft;
+      scrollLeft.current = newScroll + walk;
+    }
+    
+    carouselRef.current.scrollLeft = newScroll;
+  };
+
+  const handleTouchEnd = () => {
+    isDragging.current = false;
+    if (!dragMoved.current) {
+      direction.current *= -1;
+    }
+  };
+
   return (
     <div className="container">
       
@@ -75,7 +200,18 @@ function Website() {
               </p>
             </div>
 
-            <div className="skills-carousel-container">
+            <div 
+              className="skills-carousel-container"
+              ref={carouselRef}
+              onMouseDown={handleMouseDown}
+              onMouseLeave={handleMouseLeave}
+              onMouseEnter={handleMouseEnter}
+              onMouseUp={handleMouseUp}
+              onMouseMove={handleMouseMove}
+              onTouchStart={handleTouchStart}
+              onTouchMove={handleTouchMove}
+              onTouchEnd={handleTouchEnd}
+            >
               <div className="skills-track">
                 {[...skillsList, ...skillsList].map((skill, index) => (
                   <div className="skill-item" key={index}>
