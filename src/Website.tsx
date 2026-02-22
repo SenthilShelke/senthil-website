@@ -40,11 +40,8 @@ function Website() {
   return (
     <div className="container">
       <div className="layout-wrapper">
-
         <div className="top-row">
-
           <div className="intro-section">
-            
             <div className="intro-header-row">
               <div className="intro-titles">
                 <h1 className="main-title">Hi, I'm Senthil!</h1>
@@ -60,7 +57,6 @@ function Website() {
 
               <div className="social-icons">
                 <span className="find-me-text">Find me on:</span>
-                
                 <a href="https://github.com/SenthilShelke" target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </a>
@@ -86,7 +82,6 @@ function Website() {
                 ))}
               </div>
             </div>
-
           </div>
 
           <div className="experience-section">
@@ -151,7 +146,7 @@ function Website() {
             <Project
               title="Smart Water - Automated Watering System"
               link="https://github.com/SenthilShelke/ECE198-Project"
-              language="C, Mictocontrollers"
+              language="C, Microcontrollers"
               reverse={true}
               description="An automated plant watering system built with two STM32 microcontrollers. Sensors feed data to the microcontrollers for control logic, and an LCD displays key metrics like room temperature and tank water depth."
               image={SmartWater}
