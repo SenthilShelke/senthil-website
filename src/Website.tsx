@@ -39,6 +39,25 @@ const skillsList = [
 function Website() {
   return (
     <div className="container">
+      
+      <div className="social-sidebar">
+        <span className="find-me-text">Find me on:</span>
+        <div className="social-icons-vertical">
+          <a href="https://github.com/SenthilShelke" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="https://www.linkedin.com/in/senthil-shelke-3446722a1/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://www.instagram.com/senthilshelke/" target="_blank" rel="noopener noreferrer">
+            <FaInstagram />
+          </a>
+          <a href="mailto:senthil.shelke@gmail.com">
+            <FaEnvelope />
+          </a>
+        </div>
+      </div>
+
       <div className="layout-wrapper">
         <div className="top-row">
           <div className="intro-section">
@@ -54,22 +73,6 @@ function Website() {
               <p className="paragraph">
                 I design and ship end-to-end software systems across backend services, data infrastructure, and modern frontends. My work spans scalable microservices, high-performance dashboard reports, and automated testing frameworks that improve reliability and release velocity.
               </p>
-
-              <div className="social-icons">
-                <span className="find-me-text">Find me on:</span>
-                <a href="https://github.com/SenthilShelke" target="_blank" rel="noopener noreferrer">
-                  <FaGithub />
-                </a>
-                <a href="https://www.linkedin.com/in/senthil-shelke-3446722a1/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin />
-                </a>
-                <a href="https://www.instagram.com/senthilshelke/" target="_blank" rel="noopener noreferrer">
-                  <FaInstagram />
-                </a>
-                <a href="mailto:senthil.shelke@gmail.com">
-                  <FaEnvelope />
-                </a>
-              </div>
             </div>
 
             <div className="skills-carousel-container">

@@ -24,10 +24,79 @@ body {
   align-items: center;
 }
 
-.layout-wrapper {
+.social-sidebar {
+  position: fixed;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 25px 15px;
+  background: rgba(0, 0, 0, 0.55);
+  border: 2px solid rgba(56, 189, 248, 0.6);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  z-index: 100;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.social-sidebar:hover {
+  box-shadow: 0 8px 16px rgba(56, 189, 248, 0.25);
+  transform: translateY(-50%) translateX(-3px);
+}
+
+.find-me-text {
+  color: #f8fafc;
+  font-family: monospace;
+  font-size: 1rem;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  margin: 0 0 10px 0;
+  letter-spacing: 2px;
+}
+
+.social-icons-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-icons-vertical a {
+  color: #f8fafc;
+  width: 28px;
+  height: 28px; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.social-icons-vertical a svg {
+  width: 100%;   
+  height: 100%; 
+}
+
+.social-icons-vertical a:hover {
+  color: rgb(56, 189, 248);
+  transform: scale(1.15);
+}
+
+/* .layout-wrapper {
   width: 95%;
   max-width: 1600px;
   padding: 40px 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+} */
+
+.layout-wrapper {
+  width: 95%;
+  max-width: 1600px;
+  padding: 40px 120px 40px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -75,7 +144,7 @@ body {
 .main-title {
   font-family: monospace;
   color: #f8fafc;
-  font-size: 2.75rem;
+  font-size: 2.45rem;
   margin: 0 0 5px 0;
   line-height: 1;
 }
@@ -83,7 +152,7 @@ body {
 .sub-title {
   font-family: monospace;
   color: rgb(56, 189, 248);
-  font-size: 1.425rem;
+  font-size: 1.25rem;
   margin: 0; 
   font-weight: normal;
 }
@@ -141,42 +210,7 @@ body {
   font-size: 0.95rem;
   font-family: monospace;
   line-height: 1.7;
-  margin: 0 0 15px 0; 
-}
-
-.social-icons {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.find-me-text {
-  color: #f8fafc;
-  font-family: monospace;
-  font-size: 1.05rem; 
-  margin-right: 5px; 
-}
-
-.social-icons a {
-  color: #f8fafc;
-  width: 28px;
-  height: 28px; 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.social-icons a svg {
-  width: 100%;   
-  height: 100%; 
-}
-
-.social-icons a:hover {
-  color: rgb(56, 189, 248);
-  transform: scale(1.15);
+  margin: 0; 
 }
 
 .experience-container {
