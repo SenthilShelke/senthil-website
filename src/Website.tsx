@@ -97,7 +97,7 @@ function Website() {
               company="RBC"
               dates="Jan 2026 — Apr 2026"
               bullets={[
-                "Worked on Spring Boot microservices to resolve security vulnerabilities."
+                "Modernized a large set of Spring Boot microservices and built an AI system that automatically fixes software vulnerabilities."
               ]}
             />
             
@@ -106,7 +106,7 @@ function Website() {
               company="PandoPartner"
               dates="Sep 2025 — Present"
               bullets={[
-                "Built financial dashboards using SQL views and Evidence Studio."
+                "Built and optimized a company-wide financial dashboard platform, making reports load in seconds instead of minutes."
               ]}
             />
 
@@ -115,7 +115,7 @@ function Website() {
               company="PandoPartner"
               dates="May 2025 — Aug 2025"
               bullets={[
-                "Developed end-to-end Playwright tests using page objects and fixtures."
+                "Created a large automated testing system with Playwright that reduced manual QA work and sped up releases."
               ]}
             />
           </div>
@@ -127,7 +127,7 @@ function Website() {
             <Project
               title="Capsule - Event Tracker App"
               link="https://github.com/SenthilShelke/Capsule"
-              language="TypeScript"
+              language="TypeScript, React Native"
               reverse={false}
               description="This app lets you create your own timelines by adding events with titles, dates, descriptions, and photos. You can sign up for an account so your timelines are saved just for you, edit them anytime or view them in a slideshow with a rotating image carousel."
               image={CapsuleImg}
@@ -135,7 +135,7 @@ function Website() {
             <Project
               title="Mandelbrot Visualization App"
               link="https://github.com/SenthilShelke/React-Native-Fractal-App"
-              language="TypeScript"
+              language="TypeScript, React Native"
               reverse={true}
               description="Visualizes the Mandelbrot Set on your phone or a mobile simulator. It leverages the Skia library for its 2D graphics and the React Native Reanimated library to allow for smooth 60 FPS zooming in and out of the screen."
               image={FractalImg}
@@ -151,7 +151,7 @@ function Website() {
             <Project
               title="Smart Water - Automated Watering System"
               link="https://github.com/SenthilShelke/ECE198-Project"
-              language="C"
+              language="C, Mictocontrollers"
               reverse={true}
               description="An automated plant watering system built with two STM32 microcontrollers. Sensors feed data to the microcontrollers for control logic, and an LCD displays key metrics like room temperature and tank water depth."
               image={SmartWater}

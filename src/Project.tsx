@@ -22,7 +22,7 @@ function Project(props: ProjectProps) {
         <h1 className="title">{title}</h1>
         <p className="project-description">{description}</p>
         <div className="project-extra">
-          <p className="project-language">Language: {language}</p>
+          <p className="project-language">Language/Tools: {language}</p>
           <a
             className="project-link"
             href={link}
