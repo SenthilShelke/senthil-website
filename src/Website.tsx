@@ -71,7 +71,7 @@ function Website() {
             
             <div className="text-container">
               <p className="paragraph">
-                I design and ship end-to-end software systems across backend services, data infrastructure, and modern frontends. My work spans scalable microservices, high-performance dashboard reports, and automated testing frameworks that improve reliability and release velocity.
+               Recently, I’ve been working on backend, data, and testing projects, including modernizing Spring Boot microservices, building fast financial dashboards, and creating large-scale test automation systems. I enjoy solving practical engineering problems that improve performance and reliability.
               </p>
             </div>
 
