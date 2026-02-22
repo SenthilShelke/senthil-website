@@ -71,7 +71,7 @@ function Website() {
             
             <div className="text-container">
               <p className="paragraph">
-               Recently, I’ve been working on backend, data, and testing projects, including modernizing Spring Boot microservices, building fast financial dashboards, and creating large-scale test automation systems. I enjoy solving practical engineering problems that improve performance and reliability.
+               Recently, I’ve been working on backend, data, and testing projects, including modernizing Spring Boot microservices, building fast financial dashboards with SQL, and creating large-scale test automation systems. I enjoy solving practical engineering problems that improve performance and reliability.
               </p>
             </div>
 
