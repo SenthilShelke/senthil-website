@@ -7,13 +7,14 @@ import SmartWater from "./assets/SmartWater.jpg";
 import FractalImg from "./assets/FractalImg.jpg";
 import CapsuleImg from "./assets/CapsuleImage.jpg";
 import pic from "./assets/pic.jpg";
-import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaJava, FaPlay } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaJava, FaPlay, FaChartBar } from "react-icons/fa";
 import { 
   SiJavascript, SiTypescript, SiHtml5, SiCss3, SiPostgresql, 
   SiKotlin, SiCplusplus, SiC, SiPython, SiSpringboot, SiKubernetes, 
   SiDocker, SiPostman, SiGithubactions, SiReact, SiNextdotjs, 
   SiNodedotjs
 } from "react-icons/si";
+import { Link } from "react-router-dom"; 
 
 const skillsList = [
   { name: "JavaScript", icon: <SiJavascript /> },
@@ -165,7 +166,8 @@ function Website() {
   return (
     <div className="container">
       
-      <div className="social-sidebar">
+<div className="social-sidebar">
+        
         <span className="find-me-text">Find me on:</span>
         <div className="social-icons-vertical">
           <a href="https://github.com/SenthilShelke" target="_blank" rel="noopener noreferrer">
@@ -181,6 +183,13 @@ function Website() {
             <FaEnvelope />
           </a>
         </div>
+
+                <div className="sidebar-divider"></div>
+
+                        <Link to="/blog" className="blog-sidebar-link">
+          <span className="blog-sidebar-text">Blog</span>
+          <FaChartBar className="blog-sidebar-icon" />
+        </Link>
       </div>
 
       <div className="layout-wrapper">
@@ -236,7 +245,7 @@ function Website() {
             />
             
             <Experience
-              title="Data Engineer"
+              title="Data Visualization Engineer"
               company="PandoPartner"
               dates="Sep 2025 — Present"
               bullets={[
