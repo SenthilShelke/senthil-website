@@ -22,11 +22,11 @@ function DataVisualizationBlog() {
   };
 
   return (
-    <div className="container blog-container">
-      
+    <div className="container blog-container home-page">
+
       {selectedImg && (
-        <div 
-          className={`lightbox-overlay ${isClosing ? "closing" : ""}`} 
+        <div
+          className={`lightbox-overlay ${isClosing ? "closing" : ""}`}
           onClick={handleClose}
         >
           <img 

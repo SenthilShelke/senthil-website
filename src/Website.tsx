@@ -164,8 +164,8 @@ function Website() {
   };
 
   return (
-    <div className="container">
-      
+    <div className="container home-page">
+
 <div className="social-sidebar">
         
         <span className="find-me-text">Find me on:</span>
@@ -205,7 +205,7 @@ function Website() {
             
             <div className="text-container">
               <p className="paragraph">
-               Recently, I’ve been working on backend, data, and testing projects, including modernizing Spring Boot microservices, building fast financial dashboards with SQL and creating large-scale test automation systems. I enjoy solving practical engineering problems that improve performance and reliability.
+               Recently, I’ve been working on architecting a full-stack Next.js application for enterprise workflows, modernizing Spring Boot microservices, and building fast financial dashboards with SQL. I enjoy solving practical engineering problems that improve performance and reliability.
               </p>
             </div>
 
@@ -238,12 +238,21 @@ function Website() {
             <Experience
               title="Software Developer Intern"
               company="RBC"
+              dates="Sep 2026 — Dec 2026"
+              bullets={[
+                "Architecting a full-stack Next.js application to replace a legacy system with scalable, data-driven workflows for 30+ enterprise users."
+              ]}
+            />
+
+            <Experience
+              title="Software Developer Intern"
+              company="RBC"
               dates="Jan 2026 — Apr 2026"
               bullets={[
                 "Modernized a large set of Spring Boot microservices and built an AI system that automatically fixes software vulnerabilities."
               ]}
             />
-            
+
             <Experience
               title="Data Visualization Engineer"
               company="PandoPartner"

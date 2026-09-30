@@ -735,3 +735,450 @@ body {
   from { transform: scale(1); opacity: 1; }
   to { transform: scale(0.8); opacity: 0; }
 }
+
+.home-page {
+  --qep-bg: #0b0e14;
+  --qep-text: #e9ebef;
+  --qep-text-dim: #a7b2c0;
+  --qep-green: #7fd4a8;
+  --qep-gold: #c9a869;
+  --qep-rule: rgba(233, 235, 239, 0.14);
+  --qep-rule-strong: rgba(127, 212, 168, 0.45);
+  --qep-mono: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+  --qep-sans: "IBM Plex Sans", -apple-system, "Segoe UI", sans-serif;
+  --qep-ease: cubic-bezier(0.16, 1, 0.3, 1);
+
+  background: var(--qep-bg);
+  color: var(--qep-text);
+  line-height: 1.4;
+}
+
+/* kills the incumbent animated body gradient wherever the home page is
+   mounted, so it can never show through behind home-page text */
+html:has(.home-page),
+body:has(.home-page) {
+  line-height: 1.4;
+}
+body:has(.home-page) {
+  background: #0b0e14;
+  animation: none;
+}
+
+.home-page ::selection {
+  background: var(--qep-green);
+  color: var(--qep-bg);
+}
+
+.home-page :focus-visible {
+  outline: 2px solid var(--qep-green);
+  outline-offset: 3px;
+}
+
+.home-page a {
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.home-page ::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+.home-page ::-webkit-scrollbar-track {
+  background: var(--qep-bg);
+}
+.home-page ::-webkit-scrollbar-thumb {
+  background: var(--qep-rule);
+  border-radius: 0;
+}
+.home-page ::-webkit-scrollbar-thumb:hover {
+  background: var(--qep-rule-strong);
+}
+
+/* -- contact rail -- */
+
+.home-page .social-sidebar {
+  background: var(--qep-bg);
+  border: 1px solid var(--qep-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+.home-page .social-sidebar:hover {
+  box-shadow: none;
+  border-color: var(--qep-rule-strong);
+}
+.home-page .find-me-text {
+  color: var(--qep-text-dim);
+  font-family: var(--qep-mono);
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+.home-page .social-icons-vertical a {
+  color: var(--qep-text-dim);
+}
+.home-page .social-icons-vertical a:hover {
+  color: var(--qep-green);
+  transform: none;
+}
+.home-page .sidebar-divider {
+  background: var(--qep-rule);
+  border-radius: 0;
+}
+.home-page .blog-sidebar-text,
+.home-page .blog-sidebar-icon {
+  color: var(--qep-text-dim);
+  font-family: var(--qep-mono);
+  line-height: 1.4;
+}
+.home-page .blog-sidebar-link:hover .blog-sidebar-text,
+.home-page .blog-sidebar-link:hover .blog-sidebar-icon {
+  color: var(--qep-green);
+}
+
+@media (max-width: 1024px) {
+  .home-page .social-sidebar {
+    background: var(--qep-bg);
+  }
+}
+
+/* -- hero / root node -- */
+
+.home-page .main-title,
+.home-page .sub-title {
+  font-family: var(--qep-mono);
+  letter-spacing: 0;
+  white-space: nowrap;
+  width: fit-content;
+}
+.home-page .main-title {
+  color: var(--qep-text);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.home-page .sub-title {
+  color: var(--qep-green);
+  font-weight: 400;
+  line-height: 1.4;
+}
+/* Home hero: fills the exact width up to the profile photo, via the
+   container query context .intro-titles establishes below. */
+.home-page .intro-titles .main-title {
+  font-size: clamp(0.85rem, 10.4cqw, 3.5rem);
+}
+.home-page .intro-titles .sub-title {
+  font-size: clamp(0.45rem, 5.35cqw, 1.8rem);
+}
+/* Blog header: no photo to fill toward, no container-query context —
+   same identity (face, color, weight), sized on its own terms instead. */
+.home-page .blog-header .main-title {
+  font-size: clamp(1.8rem, 3.2vw, 2.75rem);
+}
+.home-page .blog-header .sub-title {
+  font-size: clamp(1rem, 1.6vw, 1.3rem);
+}
+.home-page .intro-section {
+  justify-content: space-between;
+  gap: 24px;
+}
+.home-page .intro-titles {
+  height: auto;
+  flex: 1;
+  min-width: 0;
+  container-type: inline-size;
+}
+.home-page .intro-titles {
+  animation: qep-materialize 0.7s var(--qep-ease) both;
+}
+@media (prefers-reduced-motion: reduce) {
+  .home-page .intro-titles {
+    animation: none;
+  }
+}
+@keyframes qep-materialize {
+  from {
+    opacity: 0.001;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.home-page .profile-pic {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(--qep-rule);
+  border-radius: 0;
+  background: var(--qep-bg);
+  box-shadow: none;
+}
+.home-page .profile-pic:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--qep-rule-strong);
+}
+
+/* -- body prose: the one deliberately human voice in the system -- */
+
+.home-page .text-container {
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+}
+.home-page .text-container:hover {
+  transform: none;
+  box-shadow: none;
+}
+.home-page .paragraph {
+  font-family: var(--qep-sans);
+  color: var(--qep-text-dim);
+  font-size: 1.15rem;
+  line-height: 1.85;
+  max-width: 58ch;
+}
+
+/* -- skills: technical data, stays mono -- */
+
+.home-page .skills-carousel-container {
+  background: var(--qep-bg);
+  border: 1px solid var(--qep-rule);
+  border-radius: 0;
+  box-shadow: none;
+  padding: 26px 0;
+}
+.home-page .skills-carousel-container:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--qep-rule-strong);
+}
+.home-page .skill-item {
+  color: var(--qep-text-dim);
+  font-family: var(--qep-mono);
+  font-size: 1.1rem;
+  line-height: 1.4;
+}
+.home-page .skill-icon {
+  color: var(--qep-green);
+  font-size: 1.6rem;
+}
+
+/* -- section labels: quiet, not shouting over the entries they group -- */
+
+.home-page .section-title {
+  font-family: var(--qep-mono);
+  color: var(--qep-text-dim);
+  background: var(--qep-bg);
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--qep-rule);
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+/* -- experience branch: tree connectors carry the hierarchy -- */
+
+.home-page .experience-section,
+.home-page .projects-list {
+  border-left: 1px solid var(--qep-rule);
+  padding-left: 22px;
+}
+
+.home-page .experience-container {
+  position: relative;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 4px 0 4px 26px;
+  gap: 6px;
+}
+.home-page .experience-container:hover {
+  transform: none;
+  box-shadow: none;
+}
+.home-page .experience-container::before {
+  content: "\251c\2500";
+  position: absolute;
+  left: -22px;
+  top: 6px;
+  width: 22px;
+  font-family: var(--qep-mono);
+  color: var(--qep-text-dim);
+  line-height: 1.4;
+  opacity: 0.55;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.home-page .experience-container:hover::before,
+.home-page .experience-container:focus-within::before {
+  opacity: 1;
+  color: var(--qep-green);
+}
+
+.home-page .experience-title {
+  font-family: var(--qep-mono);
+  color: var(--qep-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.home-page .experience-company {
+  font-family: var(--qep-mono);
+  color: var(--qep-green);
+  font-weight: 500;
+  line-height: 1.4;
+}
+.home-page .experience-dates {
+  font-family: var(--qep-mono);
+  color: var(--qep-gold);
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+.home-page .experience-bullets li {
+  font-family: var(--qep-sans);
+  color: var(--qep-text-dim);
+  font-size: 0.92rem;
+  line-height: 1.6;
+  padding-left: 16px;
+}
+.home-page .experience-bullets li::before {
+  content: "\2013";
+  color: var(--qep-rule-strong);
+  font-weight: 400;
+}
+
+/* -- projects branch: same grammar, full width -- */
+
+.home-page .project-container {
+  position: relative;
+  background: none;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 8px 0 8px 26px;
+}
+.home-page .project-container:hover {
+  transform: none;
+  box-shadow: none;
+}
+.home-page .project-container::before {
+  content: "\251c\2500";
+  position: absolute;
+  left: -22px;
+  top: 10px;
+  font-family: var(--qep-mono);
+  color: var(--qep-text-dim);
+  line-height: 1.4;
+  opacity: 0.55;
+  transition: opacity 0.2s ease, color 0.2s ease;
+}
+.home-page .project-container:last-child::before {
+  content: "\2514\2500";
+}
+.home-page .project-container:hover::before,
+.home-page .project-container:focus-within::before {
+  opacity: 1;
+  color: var(--qep-green);
+}
+
+.home-page .title {
+  font-family: var(--qep-mono);
+  color: var(--qep-text);
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 8px 0;
+}
+.home-page .project-description {
+  font-family: var(--qep-sans);
+  color: var(--qep-text-dim);
+  font-size: 0.95rem;
+  line-height: 1.65;
+  max-width: 60ch;
+}
+.home-page .project-image {
+  border: 1px solid var(--qep-rule);
+  border-radius: 0;
+  box-shadow: none;
+}
+.home-page .project-image:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--qep-rule-strong);
+}
+.home-page .project-extra {
+  border-top: 1px solid var(--qep-rule);
+}
+.home-page .project-language {
+  font-family: var(--qep-mono);
+  color: var(--qep-gold);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.home-page .project-link {
+  font-family: var(--qep-mono);
+  color: var(--qep-text-dim);
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+.home-page .project-link:hover {
+  color: var(--qep-green);
+}
+
+@media (max-width: 1024px) {
+  .home-page .experience-section,
+  .home-page .projects-list {
+    padding-left: 18px;
+  }
+  .home-page .experience-container,
+  .home-page .project-container {
+    padding-left: 22px;
+  }
+  /* Below this width, filling the container via cqw makes the subtitle
+     illegibly small (a 32-character line in a ~150px column). Readability
+     wins over exact-width fill here: drop back to a fixed, readable size
+     and allow wrapping instead of forcing a single cramped line. */
+  .home-page .main-title,
+  .home-page .sub-title {
+    white-space: normal;
+    width: auto;
+  }
+  .home-page .main-title {
+    font-size: 1.4rem;
+  }
+  .home-page .sub-title {
+    font-size: 0.9rem;
+  }
+}
+
+/* -- blog: same system, its own components -- */
+
+.home-page .back-button {
+  font-family: var(--qep-mono);
+  color: var(--qep-text-dim);
+}
+.home-page .back-button:hover {
+  color: var(--qep-green);
+  transform: translateX(-4px);
+}
+
+.home-page .blog-grid-image {
+  border-radius: 0;
+  border: 1px solid var(--qep-rule);
+  box-shadow: none;
+}
+.home-page .blog-grid-image:hover {
+  transform: none;
+  box-shadow: none;
+  border-color: var(--qep-rule-strong);
+}
+
+.home-page .lightbox-image {
+  border-radius: 0;
+  border: 1px solid var(--qep-rule-strong);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
